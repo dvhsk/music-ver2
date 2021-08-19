@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('dohungcover.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.music
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title
+{
+    font-weight: 600;
+    font-size: 2em;
+    /* color: #38a7ff; */
+    display: inline-flex;
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange{
+	0%{
+		color: #2082d3;
+	}
+	5%{
+		color: #4dcf81;
+	}
+	10%{
+		color: #4c4acc;
+	}
+	15%{
+		color: #bd1313;
+	}
+	20%{
+		color: #ffffff;
+	}
+	25%{
+		color: #3d6dd4;
+	}
+	30%{
+		color: #60b381;
+	}
+	35%{
+		color: #126ea3;
+	}
+	40%{
+		color: #d63d3d;
+	}
+	45%{
+		color: #00ff66;
+	}
+	50%{
+		color: #1f73b8;
+	}
+	55%{
+		color: #7f2fda;
+	}
+	60%{
+		color: #bcd44e;
+	}
+	65%{
+		color: #545f58;
+	}
+	70%{
+		color: #a81950;
+	}
+	75%{
+		color: #e6187f;
+	}
+	80%{
+		color: #e46060;
+	}
+	85%{
+		color: #a12708;
+	}
+	90%{
+		color: #7d817f;
+	}
+	95%{
+		color: #06e660;
+	}
+	100%{
+		color: #b3f1cc;
+	}
+}
+.player
+{
+    position: relative;
+    width: 500px;
+    min-height: 100px;
+    background: #fbfbfb;
+    border: 2px solid #fff;
+    border-radius: 80px;
+    padding: 20px 30px;
+    box-shadow: 0 0px 200px rgb(255, 255, 255),
+                10px 10px 15px rgba(253, 253, 253, 0.1),
+                inset -5px -5px 15px #fff,
+                inset 5px 5px 15px rgba(0,0,0,0.1);
+}
+.btns
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btns span
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+    box-shadow: inset 0 -5px 5px rgba(0,0,0,0.1),
+                0 5px 10px rgba(0,0,0,0.1),
+                0 10px 15px rgba(0,0,0,0.1);
+}
+.btns span:active,
+.btns span.active
+{
+    color: #66c2ff;
+    box-shadow: inset 0 -7px 5px rgba(0,0,0,0.025),
+                inset 0 5px 10px rgba(0,0,0,0.15);
+                -webkit-animation: colorchange 20s infinite alternate;
+}
+.btns span.playPause
+{
+    width: 100px;
+    height: 100px;
+}
+.btns span ion-icon 
+{
+    font-size: 1.5em;
+}
+.btns span.playPause ion-icon 
+{
+    font-size: 2.5em;
+}
+@media (max-width:280px) {
+    body
+    {
+        background-attachment: fixed;
+    }
+    .player
+    {
+        position: relative;
+        width: 250px;
+    }
+}
+@media (max-width:376px) {
+    body
+    {
+        background-attachment: fixed;
+    }
+    .player
+    {
+        width: 350px;
+    }
+}
+@media (max-width:415px) {
+    body
+    {
+        background-attachment: fixed;
+    }
+    .player
+    {
+        width: 380px;
+    }
+}
+@media (max-width:376px) {
+    body
+    {
+        background-attachment: fixed;
+    }
+    .player
+    {
+        position: relative;
+        width: 350px;
+    }
+}
+@media (max-width:321px) {
+    body
+    {
+        background-attachment: fixed;
+    }
+    .player
+    {
+        position: relative;
+        width: 300px;
+    }
+}
