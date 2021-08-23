@@ -6,8 +6,8 @@
 
         const songList=[
             {
-                path:"cuoithoi.mp3",
-                songName:"Cưới thôi!!!",
+                path:"music.mp3",
+                songName:"Hi!",
             },
             
         ];
